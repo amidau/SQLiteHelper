@@ -29,6 +29,8 @@ public abstract class SqlParser {
         return new Delete(tableName);
     }
 
+    public static Update update(String tableName) { return new Update(tableName); }
+
     SqlParser() {
         clear();
     }
@@ -67,6 +69,7 @@ public abstract class SqlParser {
     protected static final String TEXT = "TEXT";
     protected static final String FLOAT = "FLOAT";
 
+    protected static final String UPDATE = "UPDATE";
     protected static final String DELETE = "DELETE";
     protected static final String FROM = "FROM";
     protected static final String WHERE = "WHERE";
