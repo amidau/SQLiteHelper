@@ -70,6 +70,7 @@ public abstract class SqlParser {
     protected static final String FLOAT = "FLOAT";
 
     protected static final String UPDATE = "UPDATE";
+    protected static final String SET = "SET";
     protected static final String DELETE = "DELETE";
     protected static final String FROM = "FROM";
     protected static final String WHERE = "WHERE";

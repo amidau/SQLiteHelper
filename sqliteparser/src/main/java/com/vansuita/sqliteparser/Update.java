@@ -197,7 +197,7 @@ public class Update extends SqlParser {
         String sql = UPDATE + " " + table;
 
         if (!setters.isEmpty()){
-            sql += " " + Utils.breakList(",", setters);
+            sql += " " + SET + " " + Utils.breakList(",", setters);
         }
 
         if (!where.isEmpty())
